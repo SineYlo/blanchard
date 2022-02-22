@@ -1,0 +1,8 @@
+// |=============== HERE WE DESCRIBE THE STYLES FOR ELEMENTS FROM THE UI KIT ===============>
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    position: relative;
+  }
+}
