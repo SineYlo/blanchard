@@ -4,24 +4,31 @@
 @import "layout/mixins/global/mixins";
 // |=============== CONNECTING GLOBAL FONTS ===============>
 @import "config/fonts/global/fonts";
-// |=============== HERE STILL MAY BE CONNECTED FONTS ONLY FOR THE MAIN PAGE ===============>
 // |=============== CONNECTING GLOBAL VARIABLES ===============>
 @import "config/variables/global/variables";
-// |=============== HERE STILL MAY BE CONNECTED VARIABLES ONLY FOR THE MAIN PAGE ===============>
 // |=============== CONNECTING THE GLOBAL UI KIT ===============>
 @import "layout/uikit/global/ui";
-// |=============== HERE MAY BE A UI KIT CONNECTION ONLY FOR THE MAIN PAGE HERE ===============>
 // |=============== CONNECTING GLOBAL PLUGIN SETTINGS ===============>
 @import "config/settings/global/settings";
-// |=============== HERE ELSE MAY BE CONNECTING PLUGIN SETTINGS ONLY FOR THE MAIN PAGE ===============>
+// |=============== CONNECTING LOADER ===============>
+@import "components/home/loader";
 // |=============== CONNECTING THE GLOBAL SITE HEADER ===============>
 @import "components/global/header";
 // |----->
-// |=============== CONNECTING THE SECTION | ===============>
-// |=============== CONNECTING THE SECTION | ===============>
-// |=============== CONNECTING THE SECTION | ===============>
-// |=============== CONNECTING THE SECTION | ===============>
-// |=============== CONNECTING THE SECTION | ===============>
+// |=============== CONNECTING THE SECTION | HERO ===============>
+@import "components/home/hero";
+// |=============== CONNECTING THE SECTION | ABOUT ===============>
+@import "components/home/about";
+// |=============== CONNECTING THE SECTION | GALLERY ===============>
+@import "components/home/gallery";
+// |=============== CONNECTING THE SECTION | CATALOG ===============>
+@import "components/home/catalog";
+// |=============== CONNECTING THE SECTION | EVENTS ===============>
+@import "components/home/events";
+// |=============== CONNECTING THE SECTION | PROJECTS ===============>
+@import "components/home/projects";
+// |=============== CONNECTING THE SECTION | CONTACTS ===============>
+@import "components/home/contacts";
 // |----->
 // |=============== CONNECTING THE GLOBAL FOOTER SITE ===============>
 @import "components/global/footer";

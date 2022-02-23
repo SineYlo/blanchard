@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "blanchard",
   "version": "1.0.0",
-  "description": "Some description of the project.",
+  "description": "На нашем сайте вы можете ознакомиться с примерами работ авторов, а также почитать интересные статьи",
   "main": "gulpfile.babel.js",
   "scripts": {
     "prepare": "husky install",
@@ -27,21 +27,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SineYlo/Starter-Template.git"
+    "url": "git+https://github.com/SineYlo/blanchard.git"
   },
   "keywords": [
-    "keyword-1",
-    "keyword-2",
-    "keyword-3",
-    "keyword-4",
-    "keyword-5"
+    "галерея",
+    "искусство",
+    "арт",
+    "художники",
+    "примеры работ"
   ],
   "author": "SineYlo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SineYlo/Starter-Template/issues"
+    "url": "https://github.com/SineYlo/blanchard/issues"
   },
-  "homepage": "https://github.com/SineYlo/Starter-Template#readme",
+  "homepage": "https://github.com/SineYlo/blanchard#readme",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/eslint-parser": "^7.17.0",
@@ -89,11 +89,20 @@
     "postcss-pxtorem": "^6.0.0",
     "postcss-will-change": "^4.0.1",
     "sass": "^1.49.8",
-    "stylelint": "^14.5.1",
+    "stylelint": "^14.5.2",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "choices.js": "^10.1.0",
+    "focus-visible": "^5.2.0",
+    "just-validate": "^3.5.1",
+    "simplebar": "^5.3.6",
+    "superplaceholder": "^1.0.0",
+    "swiper": "^8.0.6",
+    "tippy.js": "^6.3.7"
   }
 }

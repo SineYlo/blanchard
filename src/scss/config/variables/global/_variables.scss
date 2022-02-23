@@ -1,192 +1,101 @@
 // |=============== FONT-FAMILY ===============>
 // |CM| Main font-family
-$primary-font-family: null;
-// |CM| Additional font-families
-$second-font-family: null;
-$third-font-family: null;
-$fourth-font-family: null;
+$primary-font-family: "Open Sans", system-ui;
 
 // |=============== COLOR ===============>
-// |CM| Change favorite color (Color name - )
-$hue-color: null;
+// |CM| Change favorite color (Amethyst - 274)
+$hue-color: 274;
 // |CM| HSL color mode
-$primary-color: null;
-$second-color: null;
-$third-color: null;
-$fourth-color: null;
-$fifth-color: null;
-$sixth-color: null;
-$seventh-color: null;
-$eighth-color: null;
-$ninth-color: null;
-$tenth-color: null;
-$eleventh-color: null;
-$twelfth-color: null;
-$thirteenth-color: null;
-$fourteenth-color: null;
-$fifteenth-color: null;
-$sixteenth-color: null;
-$seventeenth-color: null;
-$eighteenth-color: null;
-$nineteenth-color: null;
-$twentieth-color: null;
-$twenty-first-color: null;
-$twenty-second-color: null;
-$twenty-third-color: null;
-$twenty-fourth-color: null;
-$twenty-fifth-color: null;
-$twenty-sixth-color: null;
-$twenty-seventh-color: null;
-$twenty-eighth-color: null;
-$twenty-ninth-color: null;
-$thirtieth-color: null;
-// |CM| Colors for effects
-$primary-color-effects: null;
-$second-color-effects: null;
-$third-color-effects: null;
-$fourth-color-effects: null;
-$fifth-color-effects: null;
-$sixth-color-effects: null;
-$seventh-color-effects: null;
-$eighth-color-effects: null;
-$ninth-color-effects: null;
-$tenth-color-effects: null;
-$eleventh-color-effects: null;
-$twelfth-color-effects: null;
-$thirteenth-color-effects: null;
-$fourteenth-color-effects: null;
-$fifteenth-color-effects: null;
-$sixteenth-color-effects: null;
-$seventeenth-color-effects: null;
-$eighteenth-color-effects: null;
-$nineteenth-color-effects: null;
-$twentieth-color-effects: null;
+$primary-color: hsl($hue-color 55% 59%);
+$second-color: hsl($hue-color 70% 80%);
+$third-color: hsl($hue-color 42% 45%);
+$fourth-color: hsl($hue-color 82% 73%);
+$fifth-color: hsl($hue-color 82% 73% / 0.4);
+$sixth-color: hsl(0 81% 45%);
+$seventh-color: hsl(0 0% 93%);
+$eighth-color: hsl(0 0% 79%);
+$ninth-color: hsl(0 0% 72%);
+$tenth-color: hsl(0 0% 60%);
+$eleventh-color: hsl(0 0% 40%);
+$twelfth-color: hsl(0 0% 20%);
+$thirteenth-color: hsl(0 0% 0% / 0.9);
+$fourteenth-color: hsl(0 0% 0% / 0.6);
+$fifteenth-color: hsl(0 0% 0% / 0.5);
+$sixteenth-color: hsl(0 0% 0% / 0.4);
+$seventeenth-color: hsl(0 0% 100% / 0.2);
 // |CM| Universal colors
-$white-color: null;
-$black-color: null;
+$white-color: hsl(0 0% 100%);
+$black-color: hsl(0 0% 0%);
 
 // |=============== FONT-WEIGHT ===============>
 // |CM| Main font-weight
-$primary-font-weight: null;
+$primary-font-weight: 600;
 // |CM| Additional font-weights
-$second-font-weight: null;
-$third-font-weight: null;
-$fourth-font-weight: null;
-$fifth-font-weight: null;
+$second-font-weight: 700;
 
 // |=============== FONT-SIZE ===============>
 // |CM| Base font-size ( .5rem = 8px, 1rem = 16px, 1.5rem = 24px ...)
-$text-size-base: null;
+$text-size-base: 16px;
 // |CM| Different font-size options
-$text-size-min-tiny: $text-size-base - null;
-$text-size-min-small: $text-size-base - null;
-$text-size-min-medium: $text-size-base - null;
-$text-size-min-big: $text-size-base - null;
-$text-size-min-large: $text-size-base - null;
-$text-size-min-huge: $text-size-base - null;
-$text-size-tiny: $text-size-base - null;
-$text-size-small: $text-size-base - null;
-$text-size-medium: $text-size-base + null;
-$text-size-big: $text-size-base + null;
-$text-size-large: $text-size-base + null;
-$text-size-huge: $text-size-base + null;
-$text-size-max-tiny: $text-size-base + null;
-$text-size-max-small: $text-size-base + null;
-$text-size-max-medium: $text-size-base + null;
-$text-size-max-big: $text-size-base + null;
-$text-size-max-large: $text-size-base + null;
-$text-size-max-huge: $text-size-base + null;
-
-// |=============== LINE-HEIGHT ===============>
-// |CM| Main line-height
-$primary-lh: null;
-// |CM| Additional lines-heights
-$second-lh: null;
-$third-lh: null;
-$fourth-lh: null;
-$fifth-lh: null;
-$sixth-lh: null;
-$seventh-lh: null;
-$eighth-lh: null;
-$ninth-lh: null;
-$tenth-lh: null;
+$text-size-tiny: $text-size-base - 4px;
+$text-size-small: $text-size-base - 2px;
+$text-size-medium: $text-size-base + 2px;
+$text-size-big: $text-size-base + 4px;
+$text-size-large: $text-size-base + 8px;
+$text-size-huge: $text-size-base + 12px;
+$text-size-max-tiny: $text-size-base + 16px;
+$text-size-max-small: $text-size-base + 32px;
+$text-size-max-medium: $text-size-base + 56px;
 
 // |=============== BORDER-RADIUS ===============>
 // |CM| Main border-radius
-$primary-br: null;
+$primary-br: 6px;
 // |CM| Additional border-radiuses
-$second-br: null;
-$third-br: null;
-$fourth-br: null;
-$fifth-br: null;
-$sixth-br: null;
-$seventh-br: null;
-$eighth-br: null;
-$ninth-br: null;
-$tenth-br: null;
+$second-br: 100px;
+$third-br: 50%;
 
 // |=============== BACKGROUND-COLOR ===============>
-// |CM| Specifying a fallback color for background images
-$primary-fb-color: null;
-$second-fb-color: null;
-$third-fb-color: null;
-$fourth-fb-color: null;
-$fifth-fb-color: null;
-$sixth-fb-color: null;
-$seventh-fb-color: null;
-$eighth-fb-color: null;
-$ninth-fb-color: null;
-$tenth-fb-color: null;
-$eleventh-fb-color: null;
-$twelfth-fb-color: null;
-$thirteenth-fb-color: null;
-$fourteenth-fb-color: null;
-$fifteenth-fb-color: null;
-$sixteenth-fb-color: null;
-$seventeenth-fb-color: null;
-$eighteenth-fb-color: null;
-$nineteenth-fb-color: null;
-$twentieth-fb-color: null;
-
-// |=============== GAP ===============>
-// |CM| Specifying a fallback color for background images
-$primary-gap: null;
-$second-gap: null;
-$third-gap: null;
-$fourth-gap: null;
-$fifth-gap: null;
-$sixth-gap: null;
-$seventh-gap: null;
-$eighth-gap: null;
-$ninth-gap: null;
-$tenth-gap: null;
+// |CM| Specifying a fallback color for background images (Swiper)
+$primary-fb-color: hsl(24 15% 37%);
+$second-fb-color: hsl(24 29% 30%);
+$third-fb-color: hsl(32 26% 25%);
+// |CM| Specifying a fallback color for background images (Dropdown)
+$fourth-fb-color: hsl(23 31% 20%);
+$fifth-fb-color: hsl(35 22% 22%);
+$sixth-fb-color: hsl(32 16% 35%);
+$seventh-fb-color: hsl(42 10% 26%);
+$eighth-fb-color: hsl(70 22% 27%);
+$ninth-fb-color: hsl(31 14% 40%);
+$tenth-fb-color: hsl(65 6% 36%);
+$eleventh-fb-color: hsl(86 5% 28%);
+$twelfth-fb-color: hsl(38 52% 22%);
+$thirteenth-fb-color: hsl(30 18% 26%);
+$fourteenth-fb-color: hsl(37 41% 36%);
+$fifteenth-fb-color: hsl(44 49% 21%);
+$sixteenth-fb-color: hsl(22 72% 25%);
+$seventeenth-fb-color: hsl(356 22% 24%);
+$eighteenth-fb-color: hsl(25 12% 36%);
+$nineteenth-fb-color: hsl(326 13% 36%);
+$twentieth-fb-color: hsl(110 4% 32%);
+$twenty-first-fb-color: hsl(184 25% 23%);
+$twenty-second-fb-color: hsl(7 20% 23%);
+$twenty-third-fb-color: hsl(30 20% 41%);
+// |CM| Specifying a fallback color for background images (Gallery)
+$twenty-fourth-fb-color: hsl(0 0% 7%);
 
 // |=============== TRANSITION ===============>
 // |CM| Duration of effects (most effective 0.2 to 0.4s)
 $fast-transition-duration: 0.2s;
-$medium-transition-duration: 0.3s;
-$slow-transition-duration: 0.4s;
-
-// |=============== ANIMATIONS ===============>
-// |CM| Duration of animations (most effective 0.2 to 0.5s)
-$fast-animation-duration: 0.2s;
-$medium-animation-duration: 0.3s;
-$slow-animation-duration: 0.4s;
-$very-slow-animation-duration: 0.5s;
 
 // |=============== Z-INDEX ===============>
 // |CM| Different z-index values for ease of selection
-$primary-z: 0;
-$second-z: 1;
-$third-z: 2;
-$fourth-z: 3;
-$fifth-z: 4;
-$sixth-z: 5;
-$seventh-z: 6;
-$eighth-z: 7;
-$ninth-z: 8;
-$tenth-z: 9;
-$eleventh-z: 10;
+$primary-z: -1;
+$second-z: 0;
+$third-z: 1;
+$fourth-z: 2;
+$fifth-z: 3;
+$sixth-z: 4;
+$seventh-z: 5;
 // |CM| Ready z-index values for different components
 $z-tooltip: 20;
 $z-fixed: 100;
