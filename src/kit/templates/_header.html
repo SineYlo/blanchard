@@ -1,0 +1,200 @@
+<header class="site-header">
+  <h1 class="site-header__title">
+    Вы находитесь на сайте художественной галереи Бланчард.
+    На нём вы можете посмотреть работы разных авторов, а также почитать интересные статьи.
+  </h1>
+  <div class="top-header site-header__top">
+    <div class="container top-header__container">
+      <button class="burger-header ui-burger-btn top-header__burger" type="button" aria-controls="content-header" aria-expanded="false" aria-label="Открыть основное меню.">
+        <span class="burger-header__line burger-header__line_first" aria-hidden="true"></span>
+        <span class="burger-header__line burger-header__line_second" aria-hidden="true"></span>
+        <span class="burger-header__line burger-header__line_third" aria-hidden="true"></span>
+        <span class="burger-header__line burger-header__line_fourth" aria-hidden="true"></span>
+      </button>
+      <a class="logo-header top-header__logo" href="#">
+        <img class="logo-header__picture" src="img/sprites/sprite.svg#logo-blanchard" width="173" height="40" decoding="async" loading="lazy" alt="Логотип художественной галереи Бланчард.">
+      </a>
+      <div class="content-header ui-nav-content top-header__content" id="content-header">
+        <nav class="nav-header content-header__nav" aria-label="Основная.">
+          <ul class="nav-header__list">
+            <li class="nav-header__item">
+              <a class="nav-header__link" href="#section-about">О&nbsp;нас</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__link" href="#section-gallery">Галерея</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__link" href="#section-catalog">Каталог</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__link" href="#section-events">События</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__link" href="#">Издания</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__link" href="#section-projects">Проекты</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__link" href="#section-contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="login-header content-header__login" href="#">
+          <svg class="login-header__icon" width="13" height="13" aria-hidden="true">
+            <use xlink:href="img/sprites/sprite.svg#icon-login" />
+          </svg>
+          Войти
+        </a>
+      </div>
+      <button class="search-open js-open-search top-header__search-open" type="button" aria-controls="search-form" aria-expanded="false" aria-label="Открыть поиск по сайту.">
+        <svg class="search-open__icon" width="29" height="29" aria-hidden="true">
+          <use xlink:href="img/sprites/sprite.svg#icon-search" />
+        </svg>
+      </button>
+      <form class="search-form ui-box-search top-header__search-form" id="search-form" action="#" name="searchForm">
+        <button class="start-search search-form__start" aria-label="Активировать поиск по сайту.">
+          <svg class="start-search__icon" width="29" height="29" aria-hidden="true">
+            <use xlink:href="img/sprites/sprite.svg#icon-search" />
+          </svg>
+        </button>
+        <label class="search-form__label" for="search-field">
+          Начните поиск по сайту.
+        </label>
+        <input class="search-form__field" id="search-field" type="search" name="searchFormField" translate="no" autocapitalize="off" autocorrect="false" autocomplete="on" spellcheck="false">
+        <button class="close-search js-close-search search-form__close" type="button" aria-controls="search-form" aria-expanded="true" aria-label="Закрыть поиск по сайту.">
+          <svg class="close-search__icon" width="29" height="29" aria-hidden="true">
+            <use xlink:href="img/sprites/sprite.svg#icon-close" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="bottom-header site-header__bottom">
+    <div class="container bottom-header__container">
+      <ul class="list-header bottom-header__list">
+        <li class="list-header__item">
+          <button class="open-dropdown js-dropdown-btn list-header__open-dropdown" type="button" aria-controls="dropdown-header-first" aria-expanded="false">
+            Реализм
+            <svg class="open-dropdown__icon" width="12" height="7" aria-hidden="true">
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-bottom-white" />
+            </svg>
+          </button>
+          <ul class="dropdown-header ui-box-dropdown list-header__dropdown" id="dropdown-header-first" data-simplebar>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_tintoretto" type="button">Тинторетто</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_friedrich" type="button">Фридрих</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_leonardo" type="button">Леонардо</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_verrocchio" type="button">Верроккьо</button>
+            </li>
+          </ul>
+        </li>
+        <li class="list-header__item">
+          <button class="open-dropdown js-dropdown-btn list-header__open-dropdown" type="button" aria-controls="dropdown-header-second" aria-expanded="false">
+            Импрессионизм
+            <svg class="open-dropdown__icon" width="12" height="7" aria-hidden="true">
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-bottom-white" />
+            </svg>
+          </button>
+          <ul class="dropdown-header ui-box-dropdown list-header__dropdown" id="dropdown-header-second" data-simplebar>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_mone" type="button">Моне</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_sisley" type="button">Сислей</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_mane" type="button">Мане</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_renuar" type="button">Ренуар</button>
+            </li>
+          </ul>
+        </li>
+        <li class="list-header__item">
+          <button class="open-dropdown js-dropdown-btn list-header__open-dropdown" type="button" aria-controls="dropdown-header-third" aria-expanded="false">
+            Постимпрессионизм
+            <svg class="open-dropdown__icon" width="12" height="7" aria-hidden="true">
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-bottom-white" />
+            </svg>
+          </button>
+          <ul class="dropdown-header ui-box-dropdown list-header__dropdown" id="dropdown-header-third" data-simplebar>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_vangogh" type="button">Ван Гог</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_sezann" type="button">Сезанн</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_gogen" type="button">Гоген</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_sulfur" type="button">Сёра</button>
+            </li>
+          </ul>
+        </li>
+        <li class="list-header__item">
+          <button class="open-dropdown js-dropdown-btn list-header__open-dropdown" type="button" aria-controls="dropdown-header-fourth" aria-expanded="false">
+            Авангард
+            <svg class="open-dropdown__icon" width="12" height="7" aria-hidden="true">
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-bottom-white" />
+            </svg>
+          </button>
+          <ul class="dropdown-header ui-box-dropdown list-header__dropdown" id="dropdown-header-fourth" data-simplebar>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_kandinskiy" type="button">Кандинский</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_marinetti" type="button">Маринетти</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_malevich" type="button">Малевич</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_pikasso" type="button">Пикассо</button>
+            </li>
+          </ul>
+        </li>
+        <li class="list-header__item">
+          <button class="open-dropdown js-dropdown-btn list-header__open-dropdown" type="button" aria-controls="dropdown-header-fifth" aria-expanded="false">
+            Футуризм
+            <svg class="open-dropdown__icon" width="12" height="7" aria-hidden="true">
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-bottom-white" />
+            </svg>
+          </button>
+          <ul class="dropdown-header ui-box-dropdown list-header__dropdown" id="dropdown-header-fifth" data-simplebar>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_karra" type="button">Карра</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_pratella" type="button">Прателла</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_severini" type="button">Северини</button>
+            </li>
+            <li class="dropdown-header__item">
+              <button class="dropdown-header__btn dropdown-header__btn_bala" type="button">Балла</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form class="search-bottom bottom-header__search" action="#" name="searchFormBottom">
+        <button class="start-bottom search-bottom__start" aria-label="Активировать поиск по сайту.">
+          <svg class="start-bottom__icon" width="22" height="22" aria-hidden="true">
+            <use xlink:href="img/sprites/sprite.svg#icon-search" />
+          </svg>
+        </button>
+        <label class="search-bottom__label" for="search-bottom-field">
+          Начните поиск по сайту.
+        </label>
+        <input class="search-bottom__field" id="search-bottom-field" type="search" name="searchFormBottomField" placeholder="Поиск по сайту" translate="no" autocapitalize="off" autocorrect="false" autocomplete="on" spellcheck="false">
+      </form>
+    </div>
+  </div>
+</header>

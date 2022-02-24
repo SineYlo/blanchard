@@ -1,0 +1,156 @@
+<section class="section-gallery" id="section-gallery">
+  <div class="container section-gallery__container">
+    <div class="left-gallery section-gallery__left">
+      <h2 class="title left-gallery__title">
+        Галерея
+      </h2>
+      <h3 class="left-gallery__subtitle">
+        Фильтр:
+      </h3>
+      <select class="left-gallery__select" name="selectGallery" aria-label="Фильтр, который поможет вам отсортировать изображения.">
+        <option value="painting">Живопись</option>
+        <option value="drawing">Рисунок</option>
+        <option value="sculpture">Скульптура</option>
+      </select>
+      <div class="box-check left-gallery__box-check">
+        <div class="box-check__wrapper">
+          <input class="box-check__field" id="check-field-first" type="checkbox" name="checkFieldFirstAge" value="yes">
+          <label class="box-check__label" for="check-field-first">
+            <span lang="en">XIX</span> век
+          </label>
+        </div>
+        <div class="box-check__wrapper">
+          <input class="box-check__field" id="check-field-second" type="checkbox" name="checkFieldSecondAge" value="yes">
+          <label class="box-check__label" for="check-field-second">
+            <span lang="en">XX</span> век
+          </label>
+        </div>
+        <div class="box-check__wrapper">
+          <input class="box-check__field" id="check-field-third" type="checkbox" name="checkFieldModernity" value="yes">
+          <label class="box-check__label" for="check-field-third">
+            Современность
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="right-gallery section-gallery__right">
+      <div class="swiper swiper-gallery right-gallery__swiper">
+        <div class="swiper-gallery__actions">
+          <button class="swiper-button-prev swiper-gallery__prev" type="button"></button>
+          <div class="swiper-pagination swiper-gallery__pagination"></div>
+          <button class="swiper-button-next swiper-gallery__next" type="button"></button>
+        </div>
+        <ul class="swiper-wrapper swiper-gallery__wrapper">
+          <li class="swiper-slide slide-gallery swiper-gallery__slide">
+            <button class="js-gallery-modal-btn slide-gallery__btn" type="button" data-modal-btn="gallery" aria-controls="gallery-modal" aria-expanded="false" aria-label="Открыть развёрнутое описание изображения.">
+              <picture>
+                <source srcset="img/pictures/fr-gallery-picture-1-320.avif, img/pictures/fr-gallery-picture-1-320@2x.avif 2x, img/pictures/fr-gallery-picture-1-320@3x.avif 3x" media="(max-width: 20em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-1-320.webp, img/pictures/fr-gallery-picture-1-320@2x.webp 2x, img/pictures/fr-gallery-picture-1-320@3x.webp 3x" media="(max-width: 20em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-1-320.jpg, img/pictures/fr-gallery-picture-1-320@2x.jpg 2x, img/pictures/fr-gallery-picture-1-320@3x.jpg 3x" media="(max-width: 20em)">
+                <source srcset="img/pictures/fr-gallery-picture-1-768.avif, img/pictures/fr-gallery-picture-1-768@2x.avif 2x, img/pictures/fr-gallery-picture-1-768@3x.avif 3x" media="(max-width: 48em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-1-768.webp, img/pictures/fr-gallery-picture-1-768@2x.webp 2x, img/pictures/fr-gallery-picture-1-768@3x.webp 3x" media="(max-width: 48em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-1-768.jpg, img/pictures/fr-gallery-picture-1-768@2x.jpg 2x, img/pictures/fr-gallery-picture-1-768@3x.jpg 3x" media="(max-width: 48em)">
+                <source srcset="img/pictures/fr-gallery-picture-1-1024.avif, img/pictures/fr-gallery-picture-1-1024@2x.avif 2x, img/pictures/fr-gallery-picture-1-1024@3x.avif 3x" media="(max-width: 64em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-1-1024.webp, img/pictures/fr-gallery-picture-1-1024@2x.webp 2x, img/pictures/fr-gallery-picture-1-1024@3x.webp 3x" media="(max-width: 64em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-1-1024.jpg, img/pictures/fr-gallery-picture-1-1024@2x.jpg 2x, img/pictures/fr-gallery-picture-1-1024@3x.jpg 3x" media="(max-width: 64em)">
+                <source srcset="img/pictures/fr-gallery-picture-1-1920.avif, img/pictures/fr-gallery-picture-1-1920@2x.avif 2x, img/pictures/fr-gallery-picture-1-1920@3x.avif 3x" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-1-1920.webp, img/pictures/fr-gallery-picture-1-1920@2x.webp 2x, img/pictures/fr-gallery-picture-1-1920@3x.webp 3x" type="image/webp">
+                <img class="slide-gallery__picture" src="img/pictures/fr-gallery-picture-1-1920.jpg" srcset="img/pictures/fr-gallery-picture-1-1920@2x.jpg 2x, img/pictures/fr-gallery-picture-1-1920@3x.jpg 3x" width="350" height="350" decoding="async" loading="lazy" alt="Это картина, на которой изображен силуэт какого-то человека.">
+              </picture>
+            </button>
+          </li>
+          <li class="swiper-slide slide-gallery swiper-gallery__slide">
+            <button class="js-gallery-modal-btn slide-gallery__btn" type="button" data-modal-btn="gallery" aria-controls="gallery-modal" aria-expanded="false" aria-label="Открыть развёрнутое описание изображения.">
+              <picture>
+                <source srcset="img/pictures/fr-gallery-picture-2-320.avif, img/pictures/fr-gallery-picture-2-320@2x.avif 2x, img/pictures/fr-gallery-picture-2-320@3x.avif 3x" media="(max-width: 20em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-2-320.webp, img/pictures/fr-gallery-picture-2-320@2x.webp 2x, img/pictures/fr-gallery-picture-2-320@3x.webp 3x" media="(max-width: 20em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-2-320.jpg, img/pictures/fr-gallery-picture-2-320@2x.jpg 2x, img/pictures/fr-gallery-picture-2-320@3x.jpg 3x" media="(max-width: 20em)">
+                <source srcset="img/pictures/fr-gallery-picture-2-768.avif, img/pictures/fr-gallery-picture-2-768@2x.avif 2x, img/pictures/fr-gallery-picture-2-768@3x.avif 3x" media="(max-width: 48em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-2-768.webp, img/pictures/fr-gallery-picture-2-768@2x.webp 2x, img/pictures/fr-gallery-picture-2-768@3x.webp 3x" media="(max-width: 48em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-2-768.jpg, img/pictures/fr-gallery-picture-2-768@2x.jpg 2x, img/pictures/fr-gallery-picture-2-768@3x.jpg 3x" media="(max-width: 48em)">
+                <source srcset="img/pictures/fr-gallery-picture-2-1024.avif, img/pictures/fr-gallery-picture-2-1024@2x.avif 2x, img/pictures/fr-gallery-picture-2-1024@3x.avif 3x" media="(max-width: 64em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-2-1024.webp, img/pictures/fr-gallery-picture-2-1024@2x.webp 2x, img/pictures/fr-gallery-picture-2-1024@3x.webp 3x" media="(max-width: 64em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-2-1024.jpg, img/pictures/fr-gallery-picture-2-1024@2x.jpg 2x, img/pictures/fr-gallery-picture-2-1024@3x.jpg 3x" media="(max-width: 64em)">
+                <source srcset="img/pictures/fr-gallery-picture-2-1920.avif, img/pictures/fr-gallery-picture-2-1920@2x.avif 2x, img/pictures/fr-gallery-picture-2-1920@3x.avif 3x" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-2-1920.webp, img/pictures/fr-gallery-picture-2-1920@2x.webp 2x, img/pictures/fr-gallery-picture-2-1920@3x.webp 3x" type="image/webp">
+                <img class="slide-gallery__picture" src="img/pictures/fr-gallery-picture-2-1920.jpg" srcset="img/pictures/fr-gallery-picture-2-1920@2x.jpg 2x, img/pictures/fr-gallery-picture-2-1920@3x.jpg 3x" width="350" height="350" decoding="async" loading="lazy" alt="Это картина, на которой изображен силуэт скорее всего женщины и она держит в руках грабли.">
+              </picture>
+            </button>
+          </li>
+          <li class="swiper-slide slide-gallery swiper-gallery__slide">
+            <button class="js-gallery-modal-btn slide-gallery__btn" type="button" data-modal-btn="gallery" aria-controls="gallery-modal" aria-expanded="false" aria-label="Открыть развёрнутое описание изображения.">
+              <picture>
+                <source srcset="img/pictures/fr-gallery-picture-3-320.avif, img/pictures/fr-gallery-picture-3-320@2x.avif 2x, img/pictures/fr-gallery-picture-3-320@3x.avif 3x" media="(max-width: 20em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-3-320.webp, img/pictures/fr-gallery-picture-3-320@2x.webp 2x, img/pictures/fr-gallery-picture-3-320@3x.webp 3x" media="(max-width: 20em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-3-320.jpg, img/pictures/fr-gallery-picture-3-320@2x.jpg 2x, img/pictures/fr-gallery-picture-3-320@3x.jpg 3x" media="(max-width: 20em)">
+                <source srcset="img/pictures/fr-gallery-picture-3-768.avif, img/pictures/fr-gallery-picture-3-768@2x.avif 2x, img/pictures/fr-gallery-picture-3-768@3x.avif 3x" media="(max-width: 48em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-3-768.webp, img/pictures/fr-gallery-picture-3-768@2x.webp 2x, img/pictures/fr-gallery-picture-3-768@3x.webp 3x" media="(max-width: 48em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-3-768.jpg, img/pictures/fr-gallery-picture-3-768@2x.jpg 2x, img/pictures/fr-gallery-picture-3-768@3x.jpg 3x" media="(max-width: 48em)">
+                <source srcset="img/pictures/fr-gallery-picture-3-1024.avif, img/pictures/fr-gallery-picture-3-1024@2x.avif 2x, img/pictures/fr-gallery-picture-3-1024@3x.avif 3x" media="(max-width: 64em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-3-1024.webp, img/pictures/fr-gallery-picture-3-1024@2x.webp 2x, img/pictures/fr-gallery-picture-3-1024@3x.webp 3x" media="(max-width: 64em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-3-1024.jpg, img/pictures/fr-gallery-picture-3-1024@2x.jpg 2x, img/pictures/fr-gallery-picture-3-1024@3x.jpg 3x" media="(max-width: 64em)">
+                <source srcset="img/pictures/fr-gallery-picture-3-1920.avif, img/pictures/fr-gallery-picture-3-1920@2x.avif 2x, img/pictures/fr-gallery-picture-3-1920@3x.avif 3x" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-3-1920.webp, img/pictures/fr-gallery-picture-3-1920@2x.webp 2x, img/pictures/fr-gallery-picture-3-1920@3x.webp 3x" type="image/webp">
+                <img class="slide-gallery__picture" src="img/pictures/fr-gallery-picture-3-1920.jpg" srcset="img/pictures/fr-gallery-picture-3-1920@2x.jpg 2x, img/pictures/fr-gallery-picture-3-1920@3x.jpg 3x" width="350" height="350" decoding="async" loading="lazy" alt="Это картина, на которой изображены силуэты людей и они работают на поле.">
+              </picture>
+            </button>
+          </li>
+          <li class="swiper-slide slide-gallery swiper-gallery__slide">
+            <button class="js-gallery-modal-btn slide-gallery__btn" type="button" data-modal-btn="gallery" aria-controls="gallery-modal" aria-expanded="false" aria-label="Открыть развёрнутое описание изображения.">
+              <picture>
+                <source srcset="img/pictures/fr-gallery-picture-4-320.avif, img/pictures/fr-gallery-picture-4-320@2x.avif 2x, img/pictures/fr-gallery-picture-4-320@3x.avif 3x" media="(max-width: 20em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-4-320.webp, img/pictures/fr-gallery-picture-4-320@2x.webp 2x, img/pictures/fr-gallery-picture-4-320@3x.webp 3x" media="(max-width: 20em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-4-320.jpg, img/pictures/fr-gallery-picture-4-320@2x.jpg 2x, img/pictures/fr-gallery-picture-4-320@3x.jpg 3x" media="(max-width: 20em)">
+                <source srcset="img/pictures/fr-gallery-picture-4-768.avif, img/pictures/fr-gallery-picture-4-768@2x.avif 2x, img/pictures/fr-gallery-picture-4-768@3x.avif 3x" media="(max-width: 48em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-4-768.webp, img/pictures/fr-gallery-picture-4-768@2x.webp 2x, img/pictures/fr-gallery-picture-4-768@3x.webp 3x" media="(max-width: 48em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-4-768.jpg, img/pictures/fr-gallery-picture-4-768@2x.jpg 2x, img/pictures/fr-gallery-picture-4-768@3x.jpg 3x" media="(max-width: 48em)">
+                <source srcset="img/pictures/fr-gallery-picture-4-1024.avif, img/pictures/fr-gallery-picture-4-1024@2x.avif 2x, img/pictures/fr-gallery-picture-4-1024@3x.avif 3x" media="(max-width: 64em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-4-1024.webp, img/pictures/fr-gallery-picture-4-1024@2x.webp 2x, img/pictures/fr-gallery-picture-4-1024@3x.webp 3x" media="(max-width: 64em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-4-1024.jpg, img/pictures/fr-gallery-picture-4-1024@2x.jpg 2x, img/pictures/fr-gallery-picture-4-1024@3x.jpg 3x" media="(max-width: 64em)">
+                <source srcset="img/pictures/fr-gallery-picture-4-1920.avif, img/pictures/fr-gallery-picture-4-1920@2x.avif 2x, img/pictures/fr-gallery-picture-4-1920@3x.avif 3x" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-4-1920.webp, img/pictures/fr-gallery-picture-4-1920@2x.webp 2x, img/pictures/fr-gallery-picture-4-1920@3x.webp 3x" type="image/webp">
+                <img class="slide-gallery__picture" src="img/pictures/fr-gallery-picture-4-1920.jpg" srcset="img/pictures/fr-gallery-picture-4-1920@2x.jpg 2x, img/pictures/fr-gallery-picture-4-1920@3x.jpg 3x" width="350" height="350" decoding="async" loading="lazy" alt="Это картина, на белом фоне которой изображены абстрактные фигуры.">
+              </picture>
+            </button>
+          </li>
+          <li class="swiper-slide slide-gallery swiper-gallery__slide">
+            <button class="js-gallery-modal-btn slide-gallery__btn" type="button" data-modal-btn="gallery" aria-controls="gallery-modal" aria-expanded="false" aria-label="Открыть развёрнутое описание изображения.">
+              <picture>
+                <source srcset="img/pictures/fr-gallery-picture-5-320.avif, img/pictures/fr-gallery-picture-5-320@2x.avif 2x, img/pictures/fr-gallery-picture-5-320@3x.avif 3x" media="(max-width: 20em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-5-320.webp, img/pictures/fr-gallery-picture-5-320@2x.webp 2x, img/pictures/fr-gallery-picture-5-320@3x.webp 3x" media="(max-width: 20em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-5-320.jpg, img/pictures/fr-gallery-picture-5-320@2x.jpg 2x, img/pictures/fr-gallery-picture-5-320@3x.jpg 3x" media="(max-width: 20em)">
+                <source srcset="img/pictures/fr-gallery-picture-5-768.avif, img/pictures/fr-gallery-picture-5-768@2x.avif 2x, img/pictures/fr-gallery-picture-5-768@3x.avif 3x" media="(max-width: 48em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-5-768.webp, img/pictures/fr-gallery-picture-5-768@2x.webp 2x, img/pictures/fr-gallery-picture-5-768@3x.webp 3x" media="(max-width: 48em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-5-768.jpg, img/pictures/fr-gallery-picture-5-768@2x.jpg 2x, img/pictures/fr-gallery-picture-5-768@3x.jpg 3x" media="(max-width: 48em)">
+                <source srcset="img/pictures/fr-gallery-picture-5-1024.avif, img/pictures/fr-gallery-picture-5-1024@2x.avif 2x, img/pictures/fr-gallery-picture-5-1024@3x.avif 3x" media="(max-width: 64em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-5-1024.webp, img/pictures/fr-gallery-picture-5-1024@2x.webp 2x, img/pictures/fr-gallery-picture-5-1024@3x.webp 3x" media="(max-width: 64em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-5-1024.jpg, img/pictures/fr-gallery-picture-5-1024@2x.jpg 2x, img/pictures/fr-gallery-picture-5-1024@3x.jpg 3x" media="(max-width: 64em)">
+                <source srcset="img/pictures/fr-gallery-picture-5-1920.avif, img/pictures/fr-gallery-picture-5-1920@2x.avif 2x, img/pictures/fr-gallery-picture-5-1920@3x.avif 3x" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-5-1920.webp, img/pictures/fr-gallery-picture-5-1920@2x.webp 2x, img/pictures/fr-gallery-picture-5-1920@3x.webp 3x" type="image/webp">
+                <img class="slide-gallery__picture" src="img/pictures/fr-gallery-picture-5-1920.jpg" srcset="img/pictures/fr-gallery-picture-5-1920@2x.jpg 2x, img/pictures/fr-gallery-picture-5-1920@3x.jpg 3x" width="350" height="350" decoding="async" loading="lazy" alt="Это картина, на которой изображено много абстрактных фигур темно-белого цвета.">
+              </picture>
+            </button>
+          </li>
+          <li class="swiper-slide slide-gallery swiper-gallery__slide">
+            <button class="js-gallery-modal-btn slide-gallery__btn" type="button" data-modal-btn="gallery" aria-controls="gallery-modal" aria-expanded="false" aria-label="Открыть развёрнутое описание изображения.">
+              <picture>
+                <source srcset="img/pictures/fr-gallery-picture-6-320.avif, img/pictures/fr-gallery-picture-6-320@2x.avif 2x, img/pictures/fr-gallery-picture-6-320@3x.avif 3x" media="(max-width: 20em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-6-320.webp, img/pictures/fr-gallery-picture-6-320@2x.webp 2x, img/pictures/fr-gallery-picture-6-320@3x.webp 3x" media="(max-width: 20em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-6-320.jpg, img/pictures/fr-gallery-picture-6-320@2x.jpg 2x, img/pictures/fr-gallery-picture-6-320@3x.jpg 3x" media="(max-width: 20em)">
+                <source srcset="img/pictures/fr-gallery-picture-6-768.avif, img/pictures/fr-gallery-picture-6-768@2x.avif 2x, img/pictures/fr-gallery-picture-6-768@3x.avif 3x" media="(max-width: 48em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-6-768.webp, img/pictures/fr-gallery-picture-6-768@2x.webp 2x, img/pictures/fr-gallery-picture-6-768@3x.webp 3x" media="(max-width: 48em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-6-768.jpg, img/pictures/fr-gallery-picture-6-768@2x.jpg 2x, img/pictures/fr-gallery-picture-6-768@3x.jpg 3x" media="(max-width: 48em)">
+                <source srcset="img/pictures/fr-gallery-picture-6-1024.avif, img/pictures/fr-gallery-picture-6-1024@2x.avif 2x, img/pictures/fr-gallery-picture-6-1024@3x.avif 3x" media="(max-width: 64em)" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-6-1024.webp, img/pictures/fr-gallery-picture-6-1024@2x.webp 2x, img/pictures/fr-gallery-picture-6-1024@3x.webp 3x" media="(max-width: 64em)" type="image/webp">
+                <source srcset="img/pictures/fr-gallery-picture-6-1024.jpg, img/pictures/fr-gallery-picture-6-1024@2x.jpg 2x, img/pictures/fr-gallery-picture-6-1024@3x.jpg 3x" media="(max-width: 64em)">
+                <source srcset="img/pictures/fr-gallery-picture-6-1920.avif, img/pictures/fr-gallery-picture-6-1920@2x.avif 2x, img/pictures/fr-gallery-picture-6-1920@3x.avif 3x" type="image/avif">
+                <source srcset="img/pictures/fr-gallery-picture-6-1920.webp, img/pictures/fr-gallery-picture-6-1920@2x.webp 2x, img/pictures/fr-gallery-picture-6-1920@3x.webp 3x" type="image/webp">
+                <img class="slide-gallery__picture" src="img/pictures/fr-gallery-picture-6-1920.jpg" srcset="img/pictures/fr-gallery-picture-6-1920@2x.jpg 2x, img/pictures/fr-gallery-picture-6-1920@3x.jpg 3x" width="350" height="350" decoding="async" loading="lazy" alt="Это картина, на белом фоне которой изображены разноцветные фигуры.">
+              </picture>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
