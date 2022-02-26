@@ -6,3 +6,69 @@
     position: relative;
   }
 }
+
+.body {
+  font-family: $primary-font-family;
+  color: $twelfth-color;
+
+  &.scroll-hidden {
+    @include scrollHidden;
+  }
+}
+
+.container {
+  @include containerBase(1700px, 50px);
+}
+
+.title {
+  font-size: $text-size-max-small;
+  line-height: 65px;
+}
+
+.link-catalog {
+  display: inline-block;
+  font-weight: $primary-font-weight;
+  line-height: 22px;
+  color: $primary-color;
+  transition: color $fast-transition-duration ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover:not(.focus-visible) {
+      color: $fourth-color;
+    }
+  }
+
+  &:active:not(.focus-visible) {
+    color: $third-color;
+  }
+}
+
+@mixin backgroundFocus($offsetX: -6px, $offsetY: -2px, $color: $white-color, $bgColor: $third-color) {
+  &::before {
+    @include basicHidden;
+
+    content: "";
+    position: absolute;
+    left: #{$offsetX};
+    right: #{$offsetX};
+    top: #{$offsetY};
+    bottom: #{$offsetY};
+    z-index: $primary-z;
+    color: #{$color};
+    background-color: #{$bgColor};
+    transform: translateY(-100%);
+    transition-property: color, transform, opacity, visibility;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+  }
+}

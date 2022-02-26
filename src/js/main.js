@@ -10,12 +10,8 @@ import anchorVisible from './components/home/anchor-visible';
 import burger from './components/home/burger';
 // |=============== SCRIPT CONNECTION | DROPDOWN  ===============>
 import dropdown from './components/home/dropdown';
-// |=============== SCRIPT CONNECTION | FORM MODAL  ===============>
-import formModal from './components/home/form-modal';
-// |=============== SCRIPT CONNECTION | GALLERY MODAL  ===============>
-import galleryModal from './components/home/gallery-modal';
-// |=============== SCRIPT CONNECTION | LOADER  ===============>
-import loader from './components/home/loader';
+// |=============== SCRIPT CONNECTION | MODALS  ===============>
+import modals from './components/home/modals';
 // |=============== SCRIPT CONNECTION | YANDEX MAP  ===============>
 import map from './components/home/map';
 // |=============== SCRIPT CONNECTION | PICTURE ===============>
@@ -24,8 +20,6 @@ import picture from './components/home/picture';
 import placeholder from './components/home/placeholder';
 // |=============== SCRIPT CONNECTION | SIMPLEBAR  ===============>
 import scrollCustom from './components/home/scroll-custom';
-// |=============== SCRIPT CONNECTION | SCROLL INDENT  ===============>
-import scrollIndent from './components/home/scroll-indent';
 // |=============== SCRIPT CONNECTION | SCROLL SMOOTH  ===============>
 import scrollSmooth from './components/home/scroll-smooth';
 // |=============== SCRIPT CONNECTION | SEARCH  ===============>

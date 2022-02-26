@@ -51,11 +51,18 @@
     <!--#========== ADDS THE SITE TO THE HOME SCREEN AS AN ANDROID APP ==========#-->
     <meta name="mobile-web-app-capable" content="yes">
     <!--#========== CONNECTING SCRIPTS ==========#-->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
     <script src="js/main.min.js" defer></script>
+    <!--#========== IF THE SCRIPTS ARE NOT LOADED ==========#-->
+    <noscript>
+      <style>
+        .simplebar-content-wrapper {
+          overflow: auto;
+        }
+      </style>
+    </noscript>
   </head>
   <body class="body ui-body page__body">
-    <!--#========== CONNECTING LOADER ==========#-->
-    @@include("kit/components/home/_loader.html")
     <!--#========== CONNECTING THE SITE HEADER ==========#-->
     @@include("kit/templates/_header.html")
     <!--#========== THE MAIN PART OF THE SITE ==========#-->

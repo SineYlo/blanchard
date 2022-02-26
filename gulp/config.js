@@ -19,6 +19,7 @@ const path = {
     root: [
       `${sourceFolder}/main.webmanifest`,
       `${sourceFolder}/favicon.svg`,
+      `${sourceFolder}/mail.php`,
     ],
     htmlHome: `${sourceFolder}/index.html`,
     htmlPages: `${sourceFolder}/kit/pages/**/*.html`,

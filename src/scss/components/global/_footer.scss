@@ -1,0 +1,41 @@
+.site-footer {
+  padding: 47px 0 48px;
+  background-color: $black-color;
+
+  &__container {
+    @include f-center-sb;
+  }
+}
+
+.socials-footer {
+  @include f-ai-center;
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__link {
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible .socials-footer__icon {
+      fill: $white-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover .socials-footer__icon {
+        fill: $white-color;
+      }
+    }
+
+    &:active .socials-footer__icon {
+      fill: $primary-color;
+    }
+  }
+
+  &__icon {
+    fill: $eighth-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+}

@@ -1,0 +1,863 @@
+.site-header {
+  &__title {
+    @include visuallyHidden;
+  }
+
+  &__top {
+    position: relative;
+  }
+}
+
+.top-header {
+  padding: 30px 0;
+  font-size: $text-size-medium;
+  color: $white-color;
+  background-color: $black-color;
+
+  &__container {
+    @include f-center-sb;
+  }
+
+  &__burger {
+    position: relative;
+  }
+
+  &__search-form {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: $fifth-z;
+  }
+}
+
+.burger-header {
+  display: none;
+  width: 36px;
+  height: 28px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible &__line {
+    background-color: $fourth-color;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover &__line {
+      background-color: $primary-color;
+    }
+  }
+
+  &:active &__line {
+    background-color: $third-color;
+  }
+
+  &.ui-burger-active &__line_first,
+  &.ui-burger-active &__line_fourth {
+    opacity: 0;
+  }
+
+  &.ui-burger-active &__line_second,
+  &.ui-burger-active &__line_third {
+    width: 100%;
+  }
+
+  &.ui-burger-active &__line_second {
+    transform: rotate(45deg);
+  }
+
+  &.ui-burger-active &__line_third {
+    transform: rotate(-45deg);
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 4px;
+    background-color: $white-color;
+    transform-origin: center;
+
+    &_first,
+    &_fourth {
+      transition-property: opacity, background-color;
+      transition-duration: $fast-transition-duration;
+      transition-timing-function: ease-in-out;
+    }
+
+    &_first {
+      top: 0;
+      width: 100%;
+    }
+
+    &_second,
+    &_third {
+      top: 50%;
+      width: 77.7778%;
+      transform: translateY(-50%);
+      transition-property: width, background-color, transform;
+      transition-duration: $fast-transition-duration;
+      transition-timing-function: ease-in-out;
+      will-change: width;
+    }
+
+    &_fourth {
+      bottom: 0;
+      width: 66.6667%;
+    }
+  }
+}
+
+.content-header {
+  @include f-center-sb;
+
+  width: 78%;
+
+  &.ui-burger-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  &__login {
+    position: relative;
+    z-index: $second-z;
+  }
+}
+
+.nav-header {
+  width: 71.79487%;
+
+  &__list {
+    @include f-center-sb;
+  }
+
+  &__link {
+    @include backgroundFocus(-4px, -4px, $white-color, $third-color);
+
+    position: relative;
+    z-index: $second-z;
+    display: inline-block;
+    font-weight: $primary-font-weight;
+    line-height: 25px;
+    transition: color $fast-transition-duration ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover:not(.focus-visible) {
+        color: $fourth-color;
+      }
+    }
+
+    &:active:not(.focus-visible) {
+      color: $third-color;
+    }
+  }
+}
+
+.login-header {
+  @include backgroundFocus(-6px, -2px, $white-color, $third-color);
+
+  display: inline-flex;
+  align-items: center;
+  line-height: 25px;
+  transition: color $fast-transition-duration ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover:not(.focus-visible) {
+      color: $fourth-color;
+    }
+  }
+
+  &:active:not(.focus-visible) {
+    color: $primary-color;
+  }
+
+  &__icon {
+    margin-right: 7px;
+    fill: currentColor;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+}
+
+.search-open {
+  display: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible &__icon {
+    fill: $fourth-color;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover &__icon {
+      fill: $primary-color;
+    }
+  }
+
+  &:active &__icon {
+    fill: $third-color;
+  }
+
+  &__icon {
+    fill: $white-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+}
+
+.search-form {
+  @include f-center-sb;
+  @include basicHidden;
+
+  padding: 0 50px;
+  width: 100%;
+  min-height: 100%;
+  background-color: $black-color;
+  transform: translateY(-100%);
+  transition-property: opacity, transform, visibility;
+  transition-duration: $fast-transition-duration;
+  transition-timing-function: ease-in-out;
+
+  &.ui-search-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &__label {
+    @include visuallyHidden;
+  }
+
+  &__field {
+    border-bottom: 1px solid $seventeenth-color;
+    width: calc(100% - 120px);
+    height: 29px;
+    transition: border-color $fast-transition-duration ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      border-color: $third-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        border-color: $third-color;
+      }
+    }
+  }
+}
+
+.start-search {
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible &__icon {
+    fill: $fourth-color;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover &__icon {
+      fill: $primary-color;
+    }
+  }
+
+  &:active &__icon {
+    fill: $third-color;
+  }
+
+  &__icon {
+    fill: $white-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+}
+
+.close-search {
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible &__icon {
+    fill: $fourth-color;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover &__icon {
+      fill: $primary-color;
+    }
+  }
+
+  &:active &__icon {
+    fill: $third-color;
+  }
+
+  &__icon {
+    fill: $white-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+}
+
+.bottom-header {
+  padding: 23px 0 22px;
+  color: $white-color;
+  background-color: $sixteenth-color;
+
+  &__container {
+    @include f-center-sb;
+  }
+}
+
+.list-header {
+  @include f-center-sb;
+
+  width: 64.50964%;
+
+  &__item {
+    position: relative;
+  }
+
+  &__open-dropdown {
+    @include backgroundFocus;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: $text-size-medium;
+    line-height: 25px;
+    transition: color $fast-transition-duration ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover:not(.focus-visible) {
+        color: $primary-color;
+      }
+
+      &:hover:not(.focus-visible) .open-dropdown__icon {
+        stroke: currentColor;
+      }
+    }
+
+    &:active:not(.focus-visible) {
+      color: $third-color;
+    }
+
+    &:active:not(.focus-visible) .open-dropdown__icon {
+      stroke: currentColor;
+    }
+
+    &.ui-dropdown-active .open-dropdown__icon {
+      transform: translate(3px, 2px) rotateX(180deg);
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    left: 0;
+    top: 47px;
+  }
+}
+
+.open-dropdown {
+  &__icon {
+    stroke: $white-color;
+    transform: translate(3px, 2px);
+    transform-origin: center;
+    transition-property: stroke, transform;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.dropdown-header {
+  @include basicHidden;
+
+  padding: 40px;
+  width: 300px;
+  max-height: 300px;
+  background-color: $fourteenth-color;
+  transform: translateY(50px);
+  transition-property: opacity, visibility, transform;
+  transition-duration: $fast-transition-duration;
+  transition-timing-function: ease-in-out;
+
+  &.ui-dropdown-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: $second-z;
+    padding: 11px 14px 10px;
+    min-width: 100%;
+    line-height: 19px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: $primary-z;
+      outline: 2px solid transparent;
+      outline-offset: -2px;
+      background-color: transparent;
+      transition-property: outline-color, background-color;
+      transition-duration: $fast-transition-duration;
+      transition-timing-function: ease-in-out;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover::before {
+        outline-color: $primary-color;
+      }
+    }
+
+    &:active::before {
+      outline-color: $second-color;
+      background-color: $fifth-color;
+    }
+
+    &_tintoretto {
+      .webp-false &,
+      .avif-false & {
+        background: $fourth-fb-color url("../img/pictures/fr-tintoretto-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $fourth-fb-color url("../img/pictures/fr-tintoretto-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $fourth-fb-color url("../img/pictures/fr-tintoretto-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_friedrich {
+      .webp-false &,
+      .avif-false & {
+        background: $fifth-fb-color url("../img/pictures/fr-friedrich-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $fifth-fb-color url("../img/pictures/fr-friedrich-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $fifth-fb-color url("../img/pictures/fr-friedrich-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_leonardo {
+      .webp-false &,
+      .avif-false & {
+        background: $sixth-fb-color url("../img/pictures/fr-leonardo-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $sixth-fb-color url("../img/pictures/fr-leonardo-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $sixth-fb-color url("../img/pictures/fr-leonardo-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_verrocchio {
+      .webp-false &,
+      .avif-false & {
+        background: $seventh-fb-color url("../img/pictures/fr-verrocchio-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $seventh-fb-color url("../img/pictures/fr-verrocchio-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $seventh-fb-color url("../img/pictures/fr-verrocchio-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_mone {
+      .webp-false &,
+      .avif-false & {
+        background: $eighth-fb-color url("../img/pictures/fr-mone-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $eighth-fb-color url("../img/pictures/fr-mone-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $eighth-fb-color url("../img/pictures/fr-mone-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_sisley {
+      .webp-false &,
+      .avif-false & {
+        background: $ninth-fb-color url("../img/pictures/fr-sisley-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $ninth-fb-color url("../img/pictures/fr-sisley-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $ninth-fb-color url("../img/pictures/fr-sisley-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_mane {
+      .webp-false &,
+      .avif-false & {
+        background: $tenth-fb-color url("../img/pictures/fr-mane-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $tenth-fb-color url("../img/pictures/fr-mane-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $tenth-fb-color url("../img/pictures/fr-mane-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_renuar {
+      .webp-false &,
+      .avif-false & {
+        background: $eleventh-fb-color url("../img/pictures/fr-renuar-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $eleventh-fb-color url("../img/pictures/fr-renuar-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $eleventh-fb-color url("../img/pictures/fr-renuar-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_vangogh {
+      .webp-false &,
+      .avif-false & {
+        background: $twelfth-fb-color url("../img/pictures/fr-van-gogh-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $twelfth-fb-color url("../img/pictures/fr-van-gogh-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $twelfth-fb-color url("../img/pictures/fr-van-gogh-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_sezann {
+      .webp-false &,
+      .avif-false & {
+        background: $thirteenth-fb-color url("../img/pictures/fr-sezann-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $thirteenth-fb-color url("../img/pictures/fr-sezann-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $thirteenth-fb-color url("../img/pictures/fr-sezann-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_gogen {
+      .webp-false &,
+      .avif-false & {
+        background: $fourteenth-fb-color url("../img/pictures/fr-gogen-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $fourteenth-fb-color url("../img/pictures/fr-gogen-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $fourteenth-fb-color url("../img/pictures/fr-gogen-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_sulfur {
+      .webp-false &,
+      .avif-false & {
+        background: $fifteenth-fb-color url("../img/pictures/fr-sulfur-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $fifteenth-fb-color url("../img/pictures/fr-sulfur-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $fifteenth-fb-color url("../img/pictures/fr-sulfur-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_kandinskiy {
+      .webp-false &,
+      .avif-false & {
+        background: $sixteenth-fb-color url("../img/pictures/fr-kandinskiy-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $sixteenth-fb-color url("../img/pictures/fr-kandinskiy-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $sixteenth-fb-color url("../img/pictures/fr-kandinskiy-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_marinetti {
+      .webp-false &,
+      .avif-false & {
+        background: $seventeenth-fb-color url("../img/pictures/fr-marinetti-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $seventeenth-fb-color url("../img/pictures/fr-marinetti-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $seventeenth-fb-color url("../img/pictures/fr-marinetti-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_malevich {
+      .webp-false &,
+      .avif-false & {
+        background: $eighteenth-fb-color url("../img/pictures/fr-malevich-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $eighteenth-fb-color url("../img/pictures/fr-malevich-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $eighteenth-fb-color url("../img/pictures/fr-malevich-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_pikasso {
+      .webp-false &,
+      .avif-false & {
+        background: $nineteenth-fb-color url("../img/pictures/fr-pikasso-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $nineteenth-fb-color url("../img/pictures/fr-pikasso-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $nineteenth-fb-color url("../img/pictures/fr-pikasso-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_karra {
+      .webp-false &,
+      .avif-false & {
+        background: $twentieth-fb-color url("../img/pictures/fr-karra-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $twentieth-fb-color url("../img/pictures/fr-karra-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $twentieth-fb-color url("../img/pictures/fr-karra-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_pratella {
+      .webp-false &,
+      .avif-false & {
+        background: $twenty-first-fb-color url("../img/pictures/fr-pratella-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $twenty-first-fb-color url("../img/pictures/fr-pratella-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $twenty-first-fb-color url("../img/pictures/fr-pratella-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_severini {
+      .webp-false &,
+      .avif-false & {
+        background: $twenty-second-fb-color url("../img/pictures/fr-severini-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $twenty-second-fb-color url("../img/pictures/fr-severini-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $twenty-second-fb-color url("../img/pictures/fr-severini-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_bala {
+      .webp-false &,
+      .avif-false & {
+        background: $twenty-third-fb-color url("../img/pictures/fr-bala-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $twenty-third-fb-color url("../img/pictures/fr-bala-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $twenty-third-fb-color url("../img/pictures/fr-bala-bg.avif") center / cover no-repeat;
+      }
+    }
+  }
+}
+
+.search-bottom {
+  @include f-center-sb;
+
+  &__start {
+    margin-right: 11px;
+  }
+
+  &__label {
+    @include visuallyHidden;
+  }
+
+  &__field {
+    border-bottom: 1px solid $seventeenth-color;
+    width: 218px;
+    height: 25px;
+    font-size: $text-size-medium;
+    line-height: 25px;
+    color: $seventeenth-color;
+    transition: border-color $fast-transition-duration ease-in-out;
+
+    &::placeholder {
+      color: currentColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      border-color: $third-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        border-color: $fourth-color;
+      }
+    }
+  }
+}
+
+.start-bottom {
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible &__icon {
+    fill: $fourth-color;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover &__icon {
+      fill: $primary-color;
+    }
+  }
+
+  &:active &__icon {
+    fill: $third-color;
+  }
+
+  &__icon {
+    fill: $white-color;
+    transition: fill $fast-transition-duration ease-in-out;
+  }
+}
+
+.simplebar-track {
+  right: 19px;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 40px;
+  width: 2px;
+  height: 220px;
+  background: $black-color;
+}
+
+.simplebar-scrollbar::before {
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  background: $white-color;
+  opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+  top: 0;
+  bottom: 0;
+  width: 2px;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1;
+}

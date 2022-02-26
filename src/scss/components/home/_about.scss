@@ -1,0 +1,12 @@
+.section-about {
+  padding: 81px 0 69px;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    max-width: 1066px;
+    line-height: 32px;
+  }
+}

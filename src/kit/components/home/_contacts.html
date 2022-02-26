@@ -12,18 +12,18 @@
           Леонтьевский переулок, дом 5/1
         </address>
       </div>
-      <form class="callback-form section-contacts__form-callback" action="#" name="callbackForm">
+      <form class="callback-form section-contacts__form-callback" action="mail.php" method="post" name="callbackForm">
         <div class="callback-form__inner callback-form__inner_name">
           <label class="callback-form__label" for="callback-field-name">
             Введите своё имя.
           </label>
-          <input class="callback-form__field callback-form__field_name" id="callback-field-name" type="text" name="callbackFormFieldName" placeholder="Имя*" translate="no" autocapitalize="words" autocorrect="false" autocomplete="name" spellcheck="false" required>
+          <input class="js-callback-field-name callback-form__field callback-form__field_name" id="callback-field-name" type="text" name="callbackFormFieldName" placeholder="Имя*" translate="no" autocapitalize="words" autocorrect="false" autocomplete="name" spellcheck="false" required>
         </div>
         <div class="callback-form__inner callback-form__inner_phone">
           <label class="callback-form__label" for="callback-field-phone">
             Введите номер вашего телефона.
           </label>
-          <input class="callback-form__field callback-form__field_phone" id="callback-field-phone" type="tel" name="callbackFormFieldPhone" placeholder="Телефон*" translate="no" autocapitalize="off" autocorrect="false" autocomplete="tel" spellcheck="false" required>
+          <input class="js-callback-field-phone callback-form__field callback-form__field_phone" id="callback-field-phone" type="tel" name="callbackFormFieldPhone" placeholder="Телефон*" translate="no" autocapitalize="off" autocorrect="false" autocomplete="tel" spellcheck="false" required>
         </div>
         <button class="js-callback-btn callback-form__order">
           Заказать обратный звонок

@@ -7,8 +7,8 @@
       <h3 class="left-gallery__subtitle">
         Фильтр:
       </h3>
-      <select class="left-gallery__select" name="selectGallery" aria-label="Фильтр, который поможет вам отсортировать изображения.">
-        <option value="painting">Живопись</option>
+      <select class="js-gallery-select left-gallery__select" name="selectGallery" aria-label="Фильтр, который поможет вам отсортировать изображения.">
+        <option value="painting" selected>Живопись</option>
         <option value="drawing">Рисунок</option>
         <option value="sculpture">Скульптура</option>
       </select>
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="right-gallery section-gallery__right">
-      <div class="swiper swiper-gallery right-gallery__swiper">
+      <div class="swiper swiper-gallery js-swiper-gallery right-gallery__swiper">
         <div class="swiper-gallery__actions">
           <button class="swiper-button-prev swiper-gallery__prev" type="button"></button>
           <div class="swiper-pagination swiper-gallery__pagination"></div>

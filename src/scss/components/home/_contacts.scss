@@ -1,0 +1,202 @@
+.section-contacts {
+  &__content {
+    border: 1px solid $eighth-color;
+    padding: 38px 0 37px;
+  }
+
+  &__container {
+    @include f-center-sb;
+  }
+
+  &__title {
+    @include visuallyHidden;
+  }
+
+  &__map {
+    min-height: 700px;
+  }
+}
+
+.left-contacts {
+  &__title {
+    font-weight: $primary-font-weight;
+    font-size: $text-size-large;
+    line-height: 32px;
+  }
+
+  &__address {
+    line-height: 32px;
+  }
+}
+
+.callback-form {
+  @include f-center-sb;
+
+  width: min(100%, 909px);
+
+  &__inner {
+    position: relative;
+    width: min(100%, 270px);
+  }
+
+  &__label {
+    @include visuallyHidden;
+  }
+
+  &__field {
+    border: 1px solid $twelfth-color;
+    border-radius: $second-br;
+    padding: 8px 24px;
+    width: 100%;
+    height: 50px;
+    line-height: 32px;
+    color: $tenth-color;
+    transition: background-color $fast-transition-duration ease-in-out;
+
+    &::placeholder {
+      color: currentColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      background-color: $seventh-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        background-color: $seventh-color;
+      }
+    }
+
+    &:active {
+      color: $twelfth-color;
+    }
+
+    &_invalid {
+      border-color: $sixth-color;
+    }
+  }
+
+  &__order {
+    border: 2px solid currentColor;
+    border-radius: $second-br;
+    padding: 11px 33px 10px 34px;
+    min-width: 329px;
+    font-weight: $second-font-weight;
+    font-size: $text-size-medium;
+    line-height: 25px;
+    color: $primary-color;
+    transition-property: color, border-color, background-color;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        color: $white-color;
+        background-color: $primary-color;
+      }
+    }
+
+    &:active {
+      color: $white-color;
+      background-color: $third-color;
+    }
+  }
+
+  &__label-invalid {
+    position: absolute;
+    left: 24px;
+    top: -18px;
+    display: inline-block;
+    font-size: $text-size-tiny;
+    line-height: 16px;
+  }
+}
+
+.right-contacts {
+  &__title {
+    margin-bottom: 6px;
+    font-weight: $primary-font-weight;
+    font-size: $text-size-large;
+    line-height: 32px;
+  }
+}
+
+.connect-contacts {
+  @include f-ai-center;
+
+  &__item {
+    height: 40px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__link {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: $third-br;
+    width: 40px;
+    height: 40px;
+    transition-property: border-color, opacity;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible {
+      opacity: 0.5;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &:active {
+      border-color: $third-color;
+      opacity: 1;
+    }
+
+    &_whatsapp {
+      background: url("../img/sprites/sprite.svg#icon-whatsapp") 0 0 no-repeat;
+    }
+
+    &_telegram {
+      background: url("../img/sprites/sprite.svg#icon-telegram") 0 0 no-repeat;
+    }
+  }
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+[class*="copyrights-pane"] {
+  display: none;
+}
+
+[class*="zoom__scale"] {
+  display: none;
+}
+
+[class*="zoom__minus"] {
+  top: 17%;
+  bottom: auto;
+}

@@ -1,0 +1,126 @@
+.section-hero {
+  padding: 64px 0 122px;
+  font-weight: $second-font-weight;
+  color: $white-color;
+
+  &__title {
+    margin-bottom: 12px;
+    max-width: 597px;
+    font-size: $text-size-max-medium;
+    line-height: 98px;
+  }
+
+  &__desc {
+    margin-bottom: 76px;
+    max-width: 579px;
+    font-size: $text-size-medium;
+    line-height: 30px;
+  }
+
+  &__subscribe {
+    position: relative;
+    display: inline-block;
+    border: 3px solid transparent;
+    border-radius: $second-br;
+    padding: 20px 32px 19px;
+    min-width: 314px;
+    font-size: $text-size-medium;
+    line-height: 25px;
+    background-color: $primary-color;
+    transition-property: border-color, background-color;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      right: -7px;
+      top: -7px;
+      bottom: -7px;
+      border: 2px solid transparent;
+      border-radius: inherit;
+      transition: border-color $fast-transition-duration ease-in-out;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.focus-visible::before {
+      border-color: $fourth-color;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover {
+        border-color: $second-color;
+      }
+    }
+
+    &:active {
+      border-color: $second-color;
+      background-color: $third-color;
+    }
+  }
+
+  &__swiper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+}
+
+.swiper-hero {
+  width: 100%;
+  min-height: 800px;
+
+  &__slide {
+    min-height: 800px;
+
+    &_castle {
+      .webp-false &,
+      .avif-false & {
+        background: $primary-fb-color url("../img/pictures/fr-castle-1920-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $primary-fb-color url("../img/pictures/fr-castle-1920-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $primary-fb-color url("../img/pictures/fr-castle-1920-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_people {
+      .webp-false &,
+      .avif-false & {
+        background: $second-fb-color url("../img/pictures/fr-people-1920-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $second-fb-color url("../img/pictures/fr-people-1920-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $second-fb-color url("../img/pictures/fr-people-1920-bg.avif") center / cover no-repeat;
+      }
+    }
+
+    &_forest {
+      .webp-false &,
+      .avif-false & {
+        background: $third-fb-color url("../img/pictures/fr-forest-1920-bg.jpg") center / cover no-repeat;
+      }
+
+      .webp-true & {
+        background: $third-fb-color url("../img/pictures/fr-forest-1920-bg.webp") center / cover no-repeat;
+      }
+
+      .avif-true & {
+        background: $third-fb-color url("../img/pictures/fr-forest-1920-bg.avif") center / cover no-repeat;
+      }
+    }
+  }
+}
