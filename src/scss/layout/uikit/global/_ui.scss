@@ -10,10 +10,6 @@
 .body {
   font-family: $primary-font-family;
   color: $twelfth-color;
-
-  &.scroll-hidden {
-    @include scrollHidden;
-  }
 }
 
 .container {

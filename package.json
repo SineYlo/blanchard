@@ -101,6 +101,7 @@
     "choices.js": "^10.1.0",
     "focus-visible": "^5.2.0",
     "just-validate": "^3.5.1",
+    "scroll-lock": "^2.1.5",
     "simplebar": "^5.3.6",
     "superplaceholder": "^1.0.0",
     "swiper": "^8.0.6",
