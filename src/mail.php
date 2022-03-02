@@ -1,21 +1,17 @@
 <?php
 
-$name = $_POST['callbackFormFieldName'];
-$phone = $_POST['callbackFormFieldPhone'];
+$formName = 'Имя: '.$_POST['callbackFormFieldName']." \n\n";
+$formPhone = 'Телефон: '.$_POST['callbackFormFieldPhone']." \n\n";
 
-$name = htmlspecialchars($name);
-$phone = htmlspecialchars($phone);
+$formName = htmlspecialchars($formName);
+$formPhone = htmlspecialchars($formPhone);
 
-$name = urldecode($name);
-$phone = urldecode($email);
+$formName = urldecode($formName);
+$formPhone = urldecode($formPhone);
 
-$name = trim($name);
-$phone = trim($phone);
-
-if (mail("vavshhik01@mail.ru", "Обратный звонок", "Имя:".$name.". Телефон: ".$phone ,"From: contact@sineylo-dev.ru \r\n")) {
-    echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}
+$AllInOne = $formName.$formPhone;
+$to = 'vavshhik01@mail.ru';
+$headers = "From: SineYlo <contact@sineylo-dev.ru>\nReply-to:contact@sineylo-dev.ru\nContent-Type: text/html; charset=\"utf-8\"\n";
+mail($to, 'Обратный звонок', $AllInOne, $headers);
 
 ?>

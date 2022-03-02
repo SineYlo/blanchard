@@ -17,12 +17,3 @@ superplaceholder({
     sentenceDelay: 700,
   },
 });
-
-superplaceholder({
-  el: document.querySelector('.js-callback-field-phone'),
-  sentences: ['Пример: 79992223232'],
-  options: {
-    letterDelay: 40,
-    sentenceDelay: 700,
-  },
-});

@@ -12,6 +12,7 @@ function init() {
   myMap.controls.remove('fullscreenControl');
   myMap.controls.remove('rulerControl');
   myMap.controls.remove('typeSelector');
+  myMap.behaviors.disable(['scrollZoom']);
 
   const myPlacemark = new ymaps.Placemark([55.75846806898367, 37.60108849999989], {}, {
     iconLayout: 'default#image',

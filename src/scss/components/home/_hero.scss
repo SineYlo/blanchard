@@ -3,6 +3,10 @@
   font-weight: $second-font-weight;
   color: $white-color;
 
+  &_bind {
+    position: relative;
+  }
+
   &__title {
     margin-bottom: 12px;
     max-width: 597px;
@@ -66,7 +70,9 @@
   &__swiper {
     position: absolute;
     left: 0;
-    top: 0;
+    right: 0;
+    top: -170px;
+    bottom: 0;
     z-index: -2;
   }
 }
@@ -77,6 +83,7 @@
 
   &__slide {
     min-height: 800px;
+    animation: zoomIn 2s ease-in-out infinite alternate;
 
     &_castle {
       .webp-false &,
@@ -122,5 +129,11 @@
         background: $third-fb-color url("../img/pictures/fr-forest-1920-bg.avif") center / cover no-repeat;
       }
     }
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
   }
 }

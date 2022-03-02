@@ -100,6 +100,7 @@
     "aos": "^3.0.0-beta.6",
     "choices.js": "^10.1.0",
     "focus-visible": "^5.2.0",
+    "inputmask": "^5.0.7",
     "just-validate": "^3.5.1",
     "scroll-lock": "^2.1.5",
     "simplebar": "^5.3.6",

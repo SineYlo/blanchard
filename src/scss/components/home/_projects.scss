@@ -70,30 +70,36 @@
 
 .tooltip-btn {
   position: relative;
+  border: 1px solid $primary-color;
+  border-radius: $third-br;
   width: 16px;
   height: 16px;
+  transition: background-color $fast-transition-duration ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    background: url("../img/sprites/sprite.svg#icon-tooltip") 0 0 no-repeat;
+    transform: translate(-50%, -50%);
+  }
 
   &:focus {
     outline: none;
   }
 
-  &.focus-visible &__icon {
-    fill: $second-color;
+  &.focus-visible {
+    background-color: $second-color;
   }
 
   @media screen and (any-hover: hover) {
-    &:hover &__icon {
-      fill: $second-color;
+    &:hover {
+      background-color: $second-color;
     }
-  }
-
-  &__icon {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transition: fill $fast-transition-duration ease-in-out;
   }
 }
 

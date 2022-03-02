@@ -15,6 +15,12 @@ dropdownBtns.forEach((el) => {
     currentBtn.classList.toggle('ui-dropdown-active');
     currentBtn.setAttribute('aria-expanded', 'true');
 
+    if (currentBtn.classList.contains('ui-dropdown-active')) {
+      currentBtn.setAttribute('aria-expanded', 'true');
+    } else {
+      currentBtn.setAttribute('aria-expanded', 'false');
+    }
+
     const currentList = el.parentElement.querySelector('.ui-box-dropdown');
 
     dropdownLists.forEach((item) => {
@@ -25,4 +31,19 @@ dropdownBtns.forEach((el) => {
 
     currentList.classList.toggle('ui-dropdown-active');
   });
+});
+
+document.addEventListener('click', (e) => {
+  const { target } = e;
+
+  if (!target.closest('.list-header')) {
+    document.querySelectorAll('.ui-box-dropdown').forEach((el) => {
+      el.classList.remove('ui-dropdown-active');
+    });
+
+    document.querySelectorAll('.ui-dropdown-btn').forEach((el) => {
+      el.classList.remove('ui-dropdown-active');
+      el.setAttribute('aria-expanded', 'false');
+    });
+  }
 });

@@ -365,7 +365,7 @@
       color: $third-color;
     }
 
-    &.ui-tab-active {
+    &.ui-tab-active:not(.focus-visible) {
       color: $third-color;
     }
   }

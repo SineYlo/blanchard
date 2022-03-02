@@ -11,7 +11,7 @@ const modalOverlay = document.querySelector('.ui-modals-overlay');
 const modalWindow = document.querySelector('.ui-gallery-box-modal');
 
 addFillGapTarget(modalOverlay);
-setFillGapMethod('max-width');
+setFillGapMethod('padding');
 
 btnsModalOpen.forEach((el) => {
   el.addEventListener('click', (e) => {
