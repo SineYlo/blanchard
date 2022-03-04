@@ -1,0 +1,345 @@
+@media screen and (max-width: 48em) {
+  .search-open {
+    &__icon {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .section-hero {
+    padding: 113px 0 114px;
+
+    &__title {
+      @include d-font-size(768, 576px, 576, 72, 72px, 60, 60px);
+
+      margin-bottom: 10px;
+      line-height: 84px;
+    }
+
+    &__desc {
+      margin-bottom: 133px;
+    }
+  }
+
+  .swiper-hero {
+    &__slide {
+      &_castle {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-castle-768-bg.jpg") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-castle-768-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-castle-768-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_people {
+        .webp-false &,
+        .avif-false & {
+          background: $second-fb-color url("../img/pictures/fr-people-768-bg.jpg") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $second-fb-color url("../img/pictures/fr-people-768-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $second-fb-color url("../img/pictures/fr-people-768-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_forest {
+        .webp-false &,
+        .avif-false & {
+          background: $third-fb-color url("../img/pictures/fr-forest-768-bg.jpg") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $third-fb-color url("../img/pictures/fr-forest-768-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $third-fb-color url("../img/pictures/fr-forest-768-bg.avif") center / cover no-repeat;
+        }
+      }
+    }
+  }
+
+  .section-gallery {
+    &__container {
+      display: block;
+    }
+
+    &__left {
+      margin-bottom: 40px;
+    }
+
+    .webp-false &,
+    .avif-false & {
+      background: $twenty-fourth-fb-color url("../img/pictures/fr-grey-flowers-768-bg.jpg") center / cover no-repeat;
+    }
+
+    .webp-true & {
+      background: $twenty-fourth-fb-color url("../img/pictures/fr-grey-flowers-768-bg.webp") center / cover no-repeat;
+    }
+
+    .avif-true & {
+      background: $twenty-fourth-fb-color url("../img/pictures/fr-grey-flowers-768-bg.avif") center / cover no-repeat;
+    }
+  }
+
+  .left-gallery {
+    max-width: 281px;
+
+    &__box-check {
+      margin-top: 0;
+    }
+  }
+
+  .choices {
+    margin-bottom: 40px;
+
+    &__list {
+      &--dropdown,
+      &[aria-expanded] {
+        background-color: $black-color;
+      }
+    }
+  }
+
+  .right-gallery {
+    padding-top: 0;
+    max-width: 100%;
+  }
+
+  .gallery-modal {
+    width: min(100%, 668px);
+
+    &__picture {
+      width: 301px;
+    }
+
+    &__content {
+      width: min(100%, 367px);
+    }
+
+    &__close {
+      margin-bottom: 86px;
+    }
+
+    &__desc {
+      max-width: 255px;
+    }
+  }
+
+  .section-catalog {
+    padding-bottom: 71px;
+
+    &__desc {
+      margin-bottom: 21px;
+    }
+  }
+
+  .content-catalog {
+    flex-wrap: wrap-reverse;
+
+    &__accordion {
+      margin-bottom: 51px;
+    }
+
+    &__box {
+      margin-right: 0;
+    }
+  }
+
+  .accordion-catalog {
+    width: 100%;
+  }
+
+  .content-accordion {
+    &__list {
+      display: grid;
+      column-gap: 8.68263%;
+      grid-template: repeat(9, auto) / minmax(auto, 196px) minmax(auto, 179px) minmax(auto, 176px);
+    }
+
+    &__item {
+      &_vecchietta {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+
+      &_andrea {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+      &_domeniko {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+      }
+
+      &_gozzoli {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+      }
+
+      &_granacci {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+      }
+
+      &_gregorio {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+      }
+
+      &_udine {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+      }
+
+      &_paolo {
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+      }
+
+      &_giorgione {
+        grid-column: 2 / 3;
+        grid-row: 9 / 10;
+      }
+    }
+
+    &__box {
+      width: 41.16766%;
+      min-height: 189px;
+    }
+
+    &__title,
+    &__desc {
+      margin-bottom: 5px;
+    }
+  }
+
+  .box-catalog {
+    width: 100%;
+
+    &__inner {
+      padding-bottom: 71px;
+      min-height: 419px;
+
+      &::before {
+        top: 79px;
+        width: 236px;
+        height: 236px;
+      }
+    }
+
+    &__desc_plug {
+      max-width: 400px;
+      line-height: 22px;
+    }
+  }
+
+  .swiper-events {
+    &__content {
+      padding: 67.07143% 16px 51px 36px;
+    }
+
+    &__title,
+    &__desc {
+      max-width: 252px;
+    }
+  }
+
+  .section-projects {
+    &__text {
+      margin-bottom: 27px;
+    }
+
+    &__subtitle {
+      margin-bottom: 29px;
+    }
+  }
+
+  .text-projects {
+    max-width: 100%;
+  }
+
+  .swiper-projects {
+    width: 84.13174%;
+    max-width: 562px;
+
+    &__slide {
+      max-width: 264px;
+    }
+
+    &__link {
+      padding: 10px;
+      min-height: 106px;
+    }
+
+    &__picture {
+      &_freelands {
+        width: 210px;
+        height: 52px;
+      }
+
+      &_institute {
+        width: 217px;
+        height: 38px;
+      }
+
+      &_workhouse {
+        width: 195px;
+        height: 45px;
+      }
+
+      &_1849 {
+        width: 105px;
+        height: 73px;
+      }
+
+      &_hiscox {
+        width: 121px;
+        height: 59px;
+      }
+
+      &_camden {
+        width: 176px;
+        height: 48px;
+      }
+
+      &_stassen {
+        width: 194px;
+        height: 47px;
+      }
+
+      &_watts {
+        width: 143px;
+        height: 62px;
+      }
+
+      &_ecole {
+        width: 182px;
+        height: 49px;
+      }
+    }
+  }
+
+  .callback-form {
+    &__inner {
+      width: 48.45329%;
+    }
+
+    &__order {
+      padding: 11px 27px 10px;
+      min-width: 317px;
+    }
+  }
+}

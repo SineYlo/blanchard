@@ -1,0 +1,474 @@
+@media screen and (max-width: 75em) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .top-header {
+    padding: 29px 0;
+
+    &__content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: $fourth-z;
+    }
+  }
+
+  .burger-header {
+    display: inline-block;
+  }
+
+  .logo-header {
+    &__picture {
+      width: 188px;
+      height: 42px;
+    }
+  }
+
+  .content-header {
+    @include basicHidden;
+    @include d-padding-left(1200, 1024px, 1024, 129, 129px, 50, 50px);
+    @include d-padding-right(1200, 1024px, 1024, 129, 129px, 50, 50px);
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 112px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: $thirteenth-color;
+    transform: translateY(-100%);
+    transition-property: opacity, visibility, transform;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &.ui-burger-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    &__nav {
+      margin-bottom: auto;
+    }
+
+    &__login {
+      margin-top: 60px;
+    }
+  }
+
+  .nav-header {
+    overflow-y: auto;
+
+    &__list {
+      display: block;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &__link {
+      font-size: $text-size-large;
+      line-height: 32px;
+
+      &::before {
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .login-header {
+    border: 2px solid $primary-color;
+    border-radius: $second-br;
+    padding: 16px 88px 15px;
+    font-weight: $primary-font-weight;
+    line-height: 25px;
+    transition-property: color, background-color;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &::before {
+      display: none;
+    }
+
+    &.focus-visible {
+      background-color: $primary-color;
+    }
+  }
+
+  .search-open {
+    display: inline-block;
+  }
+
+  .search-form {
+    @include d-padding-left(1200, 1024px, 1024, 129, 129px, 50, 50px);
+    @include d-padding-right(1200, 1024px, 1024, 129, 129px, 50, 50px);
+  }
+
+  .bottom-header {
+    display: none;
+  }
+
+  .section-hero {
+    padding: 106px 0 113px;
+
+    &__desc {
+      margin-bottom: 111px;
+      max-width: 661px;
+    }
+
+    &__swiper {
+      top: -100px;
+    }
+  }
+
+  .swiper-hero {
+    min-height: 768px;
+
+    &__slide {
+      min-height: 100%;
+
+      &_castle {
+        .webp-false &,
+        .avif-false & {
+          background: $primary-fb-color url("../img/pictures/fr-castle-1024-bg.jpg") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $primary-fb-color url("../img/pictures/fr-castle-1024-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $primary-fb-color url("../img/pictures/fr-castle-1024-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_people {
+        .webp-false &,
+        .avif-false & {
+          background: $second-fb-color url("../img/pictures/fr-people-1024-bg.jpg") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $second-fb-color url("../img/pictures/fr-people-1024-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $second-fb-color url("../img/pictures/fr-people-1024-bg.avif") center / cover no-repeat;
+        }
+      }
+
+      &_forest {
+        .webp-false &,
+        .avif-false & {
+          background: $third-fb-color url("../img/pictures/fr-forest-1024-bg.jpg") center / cover no-repeat;
+        }
+
+        .webp-true & {
+          background: $third-fb-color url("../img/pictures/fr-forest-1024-bg.webp") center / cover no-repeat;
+        }
+
+        .avif-true & {
+          background: $third-fb-color url("../img/pictures/fr-forest-1024-bg.avif") center / cover no-repeat;
+        }
+      }
+    }
+  }
+
+  .section-gallery {
+    .webp-false &,
+    .avif-false & {
+      background: $twenty-fourth-fb-color url("../img/pictures/fr-grey-flowers-1024-bg.jpg") center / cover no-repeat;
+    }
+
+    .webp-true & {
+      background: $twenty-fourth-fb-color url("../img/pictures/fr-grey-flowers-1024-bg.webp") center / cover no-repeat;
+    }
+
+    .avif-true & {
+      background: $twenty-fourth-fb-color url("../img/pictures/fr-grey-flowers-1024-bg.avif") center / cover no-repeat;
+    }
+  }
+
+  .choices {
+    &__list {
+      &--dropdown,
+      &[aria-expanded] {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .left-gallery {
+    &__box-check {
+      margin-top: 120px;
+    }
+  }
+
+  .right-gallery {
+    max-width: 64.28571%;
+  }
+
+  .gallery-modal {
+    width: min(100%, 594px);
+
+    &__picture {
+      width: 264px;
+    }
+
+    &__content {
+      padding-bottom: 40px;
+      width: min(100%, 330px);
+    }
+
+    &__desc {
+      max-width: 230px;
+    }
+  }
+
+  .close-modal {
+    width: 16px;
+    height: 16px;
+  }
+
+  .box-catalog,
+  .accordion-catalog {
+    width: min(100%, 437px);
+  }
+
+  .box-catalog {
+    &__inner {
+      padding-bottom: 33px;
+      min-height: 274px;
+
+      &::before {
+        top: 36px;
+        width: 170px;
+        height: 170px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 5px;
+    }
+
+    &__date {
+      margin-bottom: 7px;
+    }
+  }
+
+  .content-accordion {
+    &__list {
+      column-gap: 12.58581%;
+      grid-template: repeat(12, auto) / minmax(auto, 206px) minmax(auto, 176px);
+    }
+
+    &__item {
+      &_vecchietta {
+        grid-column: 1 / 2;
+        grid-row: 10 / 11;
+      }
+
+      &_andrea {
+        grid-column: 1 / 2;
+        grid-row: 11 / 12;
+      }
+
+      &_domeniko {
+        grid-column: 1 / 2;
+        grid-row: 12 / 13;
+      }
+
+      &_gozzoli {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+
+      &_granacci {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+      &_gregorio {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+      }
+
+      &_udine {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+      }
+
+      &_paolo {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+      }
+
+      &_giorgione {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+      }
+    }
+
+    &__box {
+      width: 43.24943%;
+      min-height: 130px;
+    }
+
+    &__inner {
+      max-width: 207px;
+    }
+
+    &__title,
+    &__desc {
+      margin-bottom: 0;
+    }
+  }
+
+  .section-events {
+    padding-bottom: 76px;
+  }
+
+  .swiper-events {
+    padding-bottom: 45px;
+
+    &__content {
+      padding: 73.57143% 34px 51px;
+      min-height: 683px;
+
+      &_silver {
+        padding: 73.57143% 18px 51px;
+      }
+    }
+
+    &__name,
+    &__date {
+      font-weight: 400;
+      text-align: right;
+    }
+
+    &__date {
+      margin-bottom: 5px;
+    }
+
+    &__title {
+      margin-bottom: 5px;
+    }
+
+    &__pagination {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-next,
+    &-prev {
+      @include basicHidden;
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 2px;
+  }
+
+  .swiper-projects {
+    width: 88.52814%;
+    max-width: 818px;
+
+    &__link {
+      padding: 14px;
+      min-height: 128px;
+    }
+
+    &__picture {
+      &_freelands {
+        width: 210px;
+        height: 52px;
+      }
+
+      &_institute {
+        width: 283px;
+        height: 49px;
+      }
+
+      &_workhouse {
+        width: 229px;
+        height: 54px;
+      }
+
+      &_1849 {
+        width: 105px;
+        height: 73px;
+      }
+
+      &_hiscox {
+        width: 148px;
+        height: 73px;
+      }
+
+      &_camden {
+        width: 215px;
+        height: 60px;
+      }
+
+      &_stassen {
+        width: 244px;
+        height: 59px;
+      }
+
+      &_watts {
+        width: 158px;
+        height: 69px;
+      }
+
+      &_ecole {
+        width: 196px;
+        height: 53px;
+      }
+    }
+  }
+
+  .section-contacts {
+    &__content {
+      padding: 42px 0;
+    }
+
+    &__left {
+      margin-bottom: 31px;
+    }
+  }
+
+  .left-contacts {
+    &__title {
+      margin-bottom: 3px;
+    }
+  }
+
+  .callback-form {
+    width: 100%;
+
+    &__order {
+      padding: 11px 38px 10px 41px;
+      min-width: 342px;
+    }
+  }
+
+  .site-footer {
+    padding: 40px 0;
+  }
+
+  .socials-footer {
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

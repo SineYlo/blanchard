@@ -1,0 +1,12 @@
+@media screen and (max-width: 100em) {
+  .section-contacts {
+    &__container {
+      display: block;
+    }
+
+    &__left,
+    &__form-callback {
+      margin-bottom: 30px;
+    }
+  }
+}

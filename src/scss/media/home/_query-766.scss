@@ -1,0 +1,20 @@
+@media screen and (max-width: 47.875em) {
+  .content-accordion {
+    &__list {
+      grid-template: repeat(12, auto) / 1fr 1fr;
+    }
+  }
+
+  .swiper-events {
+    padding-bottom: 36px;
+
+    &__picture {
+      width: 100%;
+    }
+
+    &__title,
+    &__desc {
+      max-width: 100%;
+    }
+  }
+}

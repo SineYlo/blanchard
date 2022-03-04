@@ -1,0 +1,16 @@
+@media screen and (max-width: 87.5em) {
+  .choices {
+    &__list {
+      &--dropdown,
+      &[aria-expanded] {
+        background-color: $black-color;
+      }
+    }
+  }
+
+  .content-accordion {
+    &__list {
+      column-gap: 15px;
+    }
+  }
+}

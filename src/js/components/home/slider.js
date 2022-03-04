@@ -25,6 +25,8 @@ const swiperHero = new Swiper('.js-swiper-hero', {
 });
 
 const swiperGallery = new Swiper('.js-swiper-gallery', {
+  spaceBetween: 20,
+
   navigation: {
     nextEl: '.swiper-gallery__next',
     prevEl: '.swiper-gallery__prev',
@@ -36,7 +38,19 @@ const swiperGallery = new Swiper('.js-swiper-gallery', {
   },
 
   breakpoints: {
-    320: {
+    621: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 38,
+    },
+
+    769: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+    },
+
+    1201: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
@@ -52,6 +66,8 @@ const swiperGallery = new Swiper('.js-swiper-gallery', {
 });
 
 const swiperEvents = new Swiper('.js-swiper-events', {
+  spaceBetween: 20,
+
   navigation: {
     nextEl: '.swiper-events-next',
     prevEl: '.swiper-events-prev',
@@ -64,7 +80,17 @@ const swiperEvents = new Swiper('.js-swiper-events', {
   },
 
   breakpoints: {
-    320: {
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+    },
+
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 27,
+    },
+
+    1201: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
@@ -80,14 +106,29 @@ const swiperEvents = new Swiper('.js-swiper-events', {
 });
 
 const swiperProjects = new Swiper('.js-swiper-projects', {
+  spaceBetween: 20,
+
   navigation: {
     nextEl: '.swiper-projects-next',
     prevEl: '.swiper-projects-prev',
   },
 
   breakpoints: {
-    320: {
+    621: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+    },
+
+    1024: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 50,
+    },
+
+    1201: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 50,
     },
   },

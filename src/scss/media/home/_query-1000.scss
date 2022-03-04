@@ -1,0 +1,20 @@
+@media screen and (max-width: 62.5em) {
+  .content-accordion {
+    &__list {
+      display: block;
+    }
+  }
+
+  .callback-form {
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &__inner {
+      width: 48.35329%;
+
+      &_name {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

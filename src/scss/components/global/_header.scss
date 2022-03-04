@@ -20,6 +20,7 @@
 
   &__burger {
     position: relative;
+    z-index: $fifth-z;
   }
 
   &__search-form {
@@ -345,6 +346,7 @@
     @include backgroundFocus;
 
     position: relative;
+    z-index: $second-z;
     display: inline-flex;
     align-items: center;
     font-size: $text-size-medium;
