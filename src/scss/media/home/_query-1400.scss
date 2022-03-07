@@ -1,4 +1,4 @@
-@media screen and (max-width: 87.5em) {
+@media screen and (max-width: 90.625em) {
   .choices {
     &__list {
       &--dropdown,
@@ -10,7 +10,17 @@
 
   .content-accordion {
     &__list {
-      column-gap: 15px;
+      grid-template: repeat(12, auto) / repeat(2, 1fr);
+    }
+  }
+
+  .swiper-events {
+    &__slide {
+      height: auto;
+    }
+
+    &__content {
+      height: 100%;
     }
   }
 }

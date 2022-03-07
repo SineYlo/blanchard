@@ -4,8 +4,6 @@ import focusVisible from 'focus-visible';
 
 // |=============== SCRIPT CONNECTION | ACCORDION  ===============>
 import accordion from './components/home/accordion';
-// |=============== SCRIPT CONNECTION | ANCHOR VISIBLE  ===============>
-import anchorVisible from './components/home/anchor-visible';
 // |=============== SCRIPT CONNECTION | BURGER  ===============>
 import burger from './components/home/burger';
 // |=============== SCRIPT CONNECTION | DROPDOWN  ===============>

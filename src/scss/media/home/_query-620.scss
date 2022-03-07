@@ -256,6 +256,11 @@
   }
 
   .modals {
+    &__overlay {
+      overflow-y: auto;
+      padding: 20px 0;
+    }
+
     &__window_gallery {
       position: relative;
     }
@@ -494,10 +499,6 @@
     &__map {
       min-height: 320px;
     }
-  }
-
-  .ymaps-2-1-79-map {
-    height: 320px !important;
   }
 
   [class*="zoom__minus"] {
