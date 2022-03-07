@@ -106,6 +106,7 @@
     "simplebar": "^5.3.6",
     "superplaceholder": "^1.0.0",
     "swiper": "^8.0.6",
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "wicg-inert": "^3.1.1"
   }
 }

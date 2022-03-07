@@ -2,13 +2,6 @@
 import Swiper from 'swiper/swiper-bundle';
 
 const swiperHero = new Swiper('.js-swiper-hero', {
-  effect: 'coverflow',
-
-  coverflowEffect: {
-    rotate: 10,
-    slideShadows: false,
-  },
-
   loop: true,
 
   autoplay: {
